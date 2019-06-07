@@ -2,35 +2,51 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <title>Homework 05 - Star Wars Trivia!</title>
-  <!-- Viewport HTML -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- jQuery Library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- Bootstrap CDN -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Homework 05 - Star Wars Trivia!</title>
+    <!-- Viewport HTML -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <!-- Star Wars font -->
-    <link href="http://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css" />
-    <!-- My Javascript -->
-    <script src="assets/javascript/app.js" type="text/javascript"></script>
+    <link href="http://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-
+<!-- 1. Create index.html
+    1. In head
+        * link css / google font/ etc
+        * link jquery
+    2. In body 
+        1. create a Div with an id of "wrapper"
+            * h tag for title
+            * a div with and id of "sub-wrapper" 
+                *  a div with the ID of "quiz-area" (this will hold the dynamic content)
+                * create a start button
+        2. link javascript -->
 <body>
-    <div id="wrapper">
-        <h1>Star Wars Trivia!</h1>
-        <div id="sub-wrapper">
-            <div id="quiz-area">
-                <button id="start">Start the trivia!</button>
+    <div class="row">
+        <div class="col-sm-5">
+            <div id="wrapper">
+                <h1>Star Wars Trivia!</h1>
+                <div id="sub-wrapper">
+                    <div id="quiz-area">
+                        <button id="start">Start the trivia!</button>
+                    </div>
+                </div>
             </div>
-            
         </div>
+        <div class="col-sm-7"></div>
     </div>
+    <!-- My Javascript -->
+    <script src="assets/javascript/app.js"></script>
 </body>
