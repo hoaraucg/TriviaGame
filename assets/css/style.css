@@ -1,20 +1,53 @@
+@font-face {
+    font-family: "starjedi";
+    src:url(../images/Starjedi.ttf);
+}
 body {
     background-image: url(../images/newhope.jpg);
     background-size: 100%;
     text-align: center;
+    font-family: "starjedi";
 }
 
 h1 {
-    font-family: 'Star-Jedi', arial;
-    font-size: 48px;
+    font-family: "starjedi", arial;
+    font-size: 60px;
+    text-shadow: 4px 4px 4px #aaa;
 }
 
 #wrapper {
     height: 100%;
-    background-color: rgb(1, 1, 41);
+    justify-content: center;
+    margin:50px 50px 50px 50px;
+    background-color: rgba(1, 1, 41, 0.5);
     color:white;
+}
+#sub-wrapper {
+    margin-top: 50px;
 }
 
 #quiz-area {
-    height: 98%;
+    height: 640px;
+    margin: 100px 50px 50px 50px;
+}
+img {
+    margin: 100px 50px 50px 50px;
+}
+
+button {
+    font-size: 20px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    background-color: #1207ad;
+    color:white;
+    border: 2px solid white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+button:hover {
+    background-color: white;
+    color:black;
 }
